@@ -1,12 +1,15 @@
-# Definicio de funcions
-def gran_de_tres(x,y,z):
-    a=x
-    if(x>y):  # x>y
-        if(x>y): # x>y and x>y
-            a = x 
-        elif (z>x): # x>y and z > x => z es els mayor
-            a = z 
-        else: # Aqui x = z y => x,z son els mayors
-            a = x 
-    elif (y>x): # y>x
-        if (y>z): # y>x and y 
+def longitud(a):
+    l = 0
+    for i in a:
+        l +=1
+        return l
+
+a = input ("introduiex una cadena")
+b = longitud(a)
+print("La longitud", a,"es", b)
+c = list()
+for a in range(10):
+    x = input("Introdueix el seguent element de la llista")
+    c.append(x)
+d = longitud(c)
+print("La longitud", c,"es", d)
