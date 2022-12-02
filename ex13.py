@@ -1,15 +1,10 @@
-def longitud(a):
-    l = 0
+#Funcion que regresa la longituda
+def longitud (a):
+    count=0
     for i in a:
-        l +=1
-        return l
+        count+=1
+    return count
 
-a = input ("introduiex una cadena")
-b = longitud(a)
-print("La longitud", a,"es", b)
-c = list()
-for a in range(10):
-    x = input("Introdueix el seguent element de la llista")
-    c.append(x)
-d = longitud(c)
-print("La longitud", c,"es", d)
+#Programa principal
+b=[1,"a", [3,4],5,6]
+print(longitud(b))
