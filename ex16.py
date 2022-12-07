@@ -1,7 +1,12 @@
-s = "Fuentealbilla"
+def invertir (a) :
+    b = list(a)
+    c = b[::-1]
+    r = "".join(c)
+    return r
+    c = ["a","l","o","h"]   
 
-def invertir(fuentealbilla):
-    fuentealbilla2 = ""
-    lista = list(fuentealbilla)
-    for i in lista:
-        
+# PD
+b = input ("Introdueix una palabra:") 
+c = invertir(b)
+print ("La palabra",b,"si la girem es", c)    
+
