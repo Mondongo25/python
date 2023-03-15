@@ -1,23 +1,16 @@
-def mostrar_majors_que(t,nreferencia):
-	print("Tots els números majors de {} són: ".format(nreferencia))
-	for e in t:
-			if e>nreferencia:
-				print("{} ".format(e))
-       	 
-def llegir_tupla():
-	a = []
-	i=0
-	print("Introdueixi tots els números que vulguis. Per aturar posi -1: ")
-	while i>-1:
-		a.append(input("Introdueixi un número: "))
-		if a[i]=="-1":
-			a.remove("-1")
-			i=-2
-			i +=1
-	return a
-
-#Programa principal
-i = input("Introdueixi el número que voleu comparar: ")
-x = llegir_tupla()
-a = tuple(x)
-mostrar_majors_que(a, i)
+def leer():
+	lista=[]
+	a = 'a'
+	while a!='.':
+		a = input("Introduce un mumero: ")
+		if a != '.':
+			lista.append (int(a))
+		return tuple(lista)
+def mostrar_mayores_que(a,num):
+	for e in a:
+		if e > num:
+			print(e)
+#PP
+x = leer()
+i = input("Introduce el numero que quieres comparar: ")
+mostrar_mayores_que(x,int(i))
